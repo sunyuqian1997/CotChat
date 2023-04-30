@@ -6,9 +6,9 @@ CotChat is an autonomous community agent that can self-determine its conversatio
 
 Unlike ordinary chatbots, CotChat uses the approach proposed by React. When receiving messages, it automatically infers the appropriate action through observation-interest evaluation-reflection-action. 
 
-<div align="center">
-  <iframe src="https://embedresponsively.com/embed/b2VUAfPVudE" allowfullscreen></iframe>
-</div>
+Video: https://youtu.be/b2VUAfPVudE
+
+[![视频截图](https://img.youtube.com/vi/b2VUAfPVudE/0.jpg)](https://www.youtube.com/watch?v=b2VUAfPVudE)
 
 
 
