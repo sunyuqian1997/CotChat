@@ -1,8 +1,20 @@
 # CotChat - Autonomous Community Agent
 
-CotChat is an autonomous community agent that can self-determine its conversational behaviour through the REACT method based on ChatGPT and LangChain.  
 
-Unlike ordinary chatbots, CotChat uses the approach proposed by React. When receiving messages, it automatically infers the appropriate action through observation-interest evaluation-reflection-action. We have defined three types of behaviours: 
+
+CotChat is an autonomous community agent that can self-determine its conversational behaviour through the [REACT](https://github.com/ysymyth/ReAct) method based on ChatGPT and [LangChain](https://github.com/hwchase17/langchain).
+
+Unlike ordinary chatbots, CotChat uses the approach proposed by React. When receiving messages, it automatically infers the appropriate action through observation-interest evaluation-reflection-action. 
+
+[![视频截图](https://img.youtube.com/vi/b2VUAfPVudE/0.jpg)](https://www.youtube.com/watch?v=b2VUAfPVudE)
+
+
+
+In this example, we collaborated with artist Nick to create a chatbot based on his character LuckyCot. This character is a cat named Modem Cot that mutated from a network mediator modem and has a network cable tail. It is interested in blockchain-related content.
+
+![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=MGZmNzkxZTJmZDIzN2NhZDE1OTFiYjM1NThiMDgwMWVfVXMwNjc5a0lHbXE2UlZKbzRvcHBDV2N2cndHQUZiRTVfVG9rZW46SkFMUmI4R05Hb2pQd3N4MEVhZWNxdkdSblZnXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTZlOTY5ZmEzOTI5OWM3N2VlOTE3OTRmMmE3OTBjY2NfU0RWRnB5b1lhenBVbnFoSEo5OGJZUkZwdnRGRElNNWRfVG9rZW46Tk82RmJzb0Nobzhmdnl4MnRJbmNUT3ZpbktOXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
+
+We have defined three types of behaviours: 
 
 **Direct reply**: Reply directly to the current message, 
 
@@ -10,9 +22,7 @@ Unlike ordinary chatbots, CotChat uses the approach proposed by React. When rece
 
 and **Silent**: Feel this message is irrelevant and feel uninterested.
 
-In this example, we collaborated with artist Nick to create a chatbot based on his character LuckyCot. This character is a cat named Modem Cot that mutated from a network mediator modem and has a network cable tail. It is interested in blockchain-related content.
 
-![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=MGZmNzkxZTJmZDIzN2NhZDE1OTFiYjM1NThiMDgwMWVfVXMwNjc5a0lHbXE2UlZKbzRvcHBDV2N2cndHQUZiRTVfVG9rZW46SkFMUmI4R05Hb2pQd3N4MEVhZWNxdkdSblZnXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTZlOTY5ZmEzOTI5OWM3N2VlOTE3OTRmMmE3OTBjY2NfU0RWRnB5b1lhenBVbnFoSEo5OGJZUkZwdnRGRElNNWRfVG9rZW46Tk82RmJzb0Nobzhmdnl4MnRJbmNUT3ZpbktOXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
 
 The thinking process (steps) of this bot can be summarized as follows:
 
@@ -33,9 +43,13 @@ Next, when I say I want KFC(fried chicken), the cat thinks it's unrelated to its
 
 The chat process with the cat is converted into vectors added to its memory. Later, when we mention KFC again, we can see that the cat becomes interested this time because it is related to its memory of the previous discussion on KFC. But when the user repeats the same message, the cat gets annoyed, and refuses to reply.
 
-![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=ODVkNDM3ODNkMDQwOTRkYzQ3MTVjYjQ1N2JkOWYzOGFfZnNvN0VJTkpZM3hvbXptQ0lVZXhYU2VZY0plY1JDbUJfVG9rZW46R2RLQWJUSUM0b2xOSXR4b1Zud2NPMURMbm1iXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=Njg1M2ZjYzgzYWFjMDAwOGMxYmQ4N2M0Njg1ZDZjN2JfUUgwWEpaQzd4eFIydWlTRDRoVEZhYlppRGxYdGpWcjBfVG9rZW46RXRLd2IxWEZMb1VLUEF4dEVXUmNQOGZ2bnNnXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
+![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=ODVkNDM3ODNkMDQwOTRkYzQ3MTVjYjQ1N2JkOWYzOGFfZnNvN0VJTkpZM3hvbXptQ0lVZXhYU2VZY0plY1JDbUJfVG9rZW46R2RLQWJUSUM0b2xOSXR4b1Zud2NPMURMbm1iXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
 
-Left: Relate discussion to memories. Right: Get annoyed when the same message is repeated.
+<center>Relate discussion to memories.</center>
+
+![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=Njg1M2ZjYzgzYWFjMDAwOGMxYmQ4N2M0Njg1ZDZjN2JfUUgwWEpaQzd4eFIydWlTRDRoVEZhYlppRGxYdGpWcjBfVG9rZW46RXRLd2IxWEZMb1VLUEF4dEVXUmNQOGZ2bnNnXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
+
+<center>Get annoyed when the same message is repeated.</center>
 
 ```Plain
 Related memory:
@@ -48,3 +62,13 @@ modem_cot:@未命名Cheese, @李子, while it may be more expensive to order thr
 ```
 
 In summary, we have applied the Observe-reasoning-action approach proposed in React to community chatbots. Currently, this application is displayed through WeChat. We hope that in the future, Autonomous Agents can truly become members of human society.
+
+
+
+### Author Info
+
+by Yuqian Sun ([Twitter](https://twitter.com/sunyuqian1997)), Jun Peng.
+
+Collaborate with artist [Niq](https://twitter.com/NiqisLucky). Thanks [Shunyu Yao](https://github.com/ysymyth) for support.
+
+Current demo is on WeChat. For Demo request, please contact sunyuqian(at)gmail(dot)com
