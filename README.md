@@ -6,13 +6,15 @@ CotChat is an autonomous community agent that can self-determine its conversatio
 
 Unlike ordinary chatbots, CotChat uses the approach proposed by React. When receiving messages, it automatically infers the appropriate action through observation-interest evaluation-reflection-action. 
 
-[![视频截图](https://img.youtube.com/vi/b2VUAfPVudE/0.jpg)](https://www.youtube.com/watch?v=b2VUAfPVudE)
+<div align="center">
+  <iframe src="https://embedresponsively.com/embed/b2VUAfPVudE" allowfullscreen></iframe>
+</div>
 
 
 
 In this example, we collaborated with artist Nick to create a chatbot based on his character LuckyCot. This character is a cat named Modem Cot that mutated from a network mediator modem and has a network cable tail. It is interested in blockchain-related content.
 
-![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=MGZmNzkxZTJmZDIzN2NhZDE1OTFiYjM1NThiMDgwMWVfVXMwNjc5a0lHbXE2UlZKbzRvcHBDV2N2cndHQUZiRTVfVG9rZW46SkFMUmI4R05Hb2pQd3N4MEVhZWNxdkdSblZnXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTZlOTY5ZmEzOTI5OWM3N2VlOTE3OTRmMmE3OTBjY2NfU0RWRnB5b1lhenBVbnFoSEo5OGJZUkZwdnRGRElNNWRfVG9rZW46Tk82RmJzb0Nobzhmdnl4MnRJbmNUT3ZpbktOXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
+![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTZlOTY5ZmEzOTI5OWM3N2VlOTE3OTRmMmE3OTBjY2NfU0RWRnB5b1lhenBVbnFoSEo5OGJZUkZwdnRGRElNNWRfVG9rZW46Tk82RmJzb0Nobzhmdnl4MnRJbmNUT3ZpbktOXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
 
 We have defined three types of behaviours: 
 
