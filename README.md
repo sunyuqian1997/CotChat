@@ -14,9 +14,11 @@ Video: https://youtu.be/b2VUAfPVudE
 
 In this example, we collaborated with artist Nick to create a chatbot based on his character LuckyCot. This character is a cat named Modem Cot that mutated from a network mediator modem and has a network cable tail. It is interested in blockchain-related content.
 
-![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTZlOTY5ZmEzOTI5OWM3N2VlOTE3OTRmMmE3OTBjY2NfU0RWRnB5b1lhenBVbnFoSEo5OGJZUkZwdnRGRElNNWRfVG9rZW46Tk82RmJzb0Nobzhmdnl4MnRJbmNUT3ZpbktOXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
+![1](img/1.jpeg)
 
-We have defined three types of behaviours: 
+
+
+![2](img/2.png)We have defined three types of behaviours: 
 
 **Direct reply**: Reply directly to the current message, 
 
@@ -37,19 +39,19 @@ The thinking process (steps) of this bot can be summarized as follows:
 
 When I mention "Kitty," it considers the message to be related to itself. The evaluation value is used to score its interest and relevance. This message is seen as relevant by Modem Cot. 
 
-![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=YzI3NWNmYzE0NmU2ZDkyOTNjZjBmZThkMDNmMzI5NzBfMVdyNld1c3hIcUVMZGlXeTYweG5hbXNJek10Skw0STBfVG9rZW46WmFhNmJ5S09Sb092YUN4NFdITGNSdUUxbjViXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
 
-Next, when I say I want KFC(fried chicken), the cat thinks it's unrelated to itself, so it chooses to remain Silent. Similarly, when another user echoes the sentiment, the cat remains uninterested and silent. However, when we mention blockchain, the cat starts to think it's related to itself and generates continuous replies. We can see that its thinking process is coherent.
 
-![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjA3MGU2NzM2MTJkYzBhZjE1ZWI2ZTY3YjdmOWQwNDBfSVBDTkNZYWhMQjI2UkU0OXduTzQwOUVOeUgzRkVjS0JfVG9rZW46UmlSZmJhZXgyb1djcHV4RWhCYWNtblVLbmllXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
+![3](img/3.png)Next, when I say I want KFC(fried chicken), the cat thinks it's unrelated to itself, so it chooses to remain Silent. Similarly, when another user echoes the sentiment, the cat remains uninterested and silent. However, when we mention blockchain, the cat starts to think it's related to itself and generates continuous replies. We can see that its thinking process is coherent.
 
-The chat process with the cat is converted into vectors added to its memory. Later, when we mention KFC again, we can see that the cat becomes interested this time because it is related to its memory of the previous discussion on KFC. But when the user repeats the same message, the cat gets annoyed, and refuses to reply.
 
-![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=ODVkNDM3ODNkMDQwOTRkYzQ3MTVjYjQ1N2JkOWYzOGFfZnNvN0VJTkpZM3hvbXptQ0lVZXhYU2VZY0plY1JDbUJfVG9rZW46R2RLQWJUSUM0b2xOSXR4b1Zud2NPMURMbm1iXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
+
+![4](img/4.png)The chat process with the cat is converted into vectors added to its memory. Later, when we mention KFC again, we can see that the cat becomes interested this time because it is related to its memory of the previous discussion on KFC. But when the user repeats the same message, the cat gets annoyed, and refuses to reply.
+
+![5](img/5.png)
 
 <center>Relate discussion to memories.</center>
 
-![img](https://smlhic47en.feishu.cn/space/api/box/stream/download/asynccode/?code=Njg1M2ZjYzgzYWFjMDAwOGMxYmQ4N2M0Njg1ZDZjN2JfUUgwWEpaQzd4eFIydWlTRDRoVEZhYlppRGxYdGpWcjBfVG9rZW46RXRLd2IxWEZMb1VLUEF4dEVXUmNQOGZ2bnNnXzE2ODI4ODgwNDU6MTY4Mjg5MTY0NV9WNA)
+![6](img/6.png)
 
 <center>Get annoyed when the same message is repeated.</center>
 
